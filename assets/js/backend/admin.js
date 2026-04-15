@@ -1443,6 +1443,10 @@ jQuery(function($){
   // ─────────────────────────────────────────────────────────────────────
   // Remove a waitlist entry in the Tickets edit form
   // ─────────────────────────────────────────────────────────────────────
+function ttaReloadAdminAfterTicketAction(){
+  window.location.reload();
+}
+
 $(document).on('click', '.tta-remove-waitlist-entry', function(e){
   e.preventDefault();
   var $row = $(this).closest('tr[data-waitlist-id], .tta-wl-entry');
@@ -1455,6 +1459,7 @@ $(document).on('click', '.tta-remove-waitlist-entry', function(e){
     if(res.success){
       $row.remove();
       alert(res.data && res.data.message ? res.data.message : 'Removed');
+      ttaReloadAdminAfterTicketAction();
     }else{
       alert(res.data && res.data.message ? res.data.message : 'Error');
     }
@@ -1483,15 +1488,17 @@ $(document).on('click', '.tta-remove-waitlist-entry', function(e){
               .addClass('tta-disabled tta-tooltip-trigger')
               .attr('data-tooltip', 'Refund scheduled after settlement');
           alert(res.data && res.data.message ? res.data.message : 'Refund pending');
+          ttaReloadAdminAfterTicketAction();
           return;
         }
         if(mode === 'cancel'){
           $row.remove();
           alert(res.data && res.data.message ? res.data.message : 'Refund processed');
-          window.location.reload();
+          ttaReloadAdminAfterTicketAction();
           return;
         }
         alert(res.data && res.data.message ? res.data.message : 'Refund processed');
+        ttaReloadAdminAfterTicketAction();
       }else{
         alert(res.data && res.data.message ? res.data.message : 'Error');
       }
@@ -1518,6 +1525,7 @@ $(document).on('click', '.tta-remove-waitlist-entry', function(e){
       if(res.success){
         $row.remove();
         alert(res.data && res.data.message ? res.data.message : 'Attendance cancelled');
+        ttaReloadAdminAfterTicketAction();
       }else{
         alert(res.data && res.data.message ? res.data.message : 'Error');
       }
@@ -1548,10 +1556,12 @@ $(document).on('click', '.tta-remove-waitlist-entry', function(e){
               .addClass('tta-disabled tta-tooltip-trigger')
               .attr('data-tooltip', 'Refund scheduled after settlement');
           alert(res.data && res.data.message ? res.data.message : 'Refund pending');
+          ttaReloadAdminAfterTicketAction();
           return;
         }
         $row.remove();
         alert(res.data && res.data.message ? res.data.message : 'OK');
+        ttaReloadAdminAfterTicketAction();
       }else{
         alert(res.data && res.data.message ? res.data.message : 'Error');
       }
