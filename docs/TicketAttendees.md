@@ -16,7 +16,9 @@ columns show **Name**, **Email**, **Phone**, **Membership Level**, and **Date & 
 Joined**, followed by an **Actions** column with a Remove button. Entries are
 ordered from oldest to newest so admins can quickly see who has been waiting the
 longest. Removing an entry deletes it immediately via AJAX so another person can
-take the open spot.
+take the open spot. After successful ticket actions (refund/cancel/pending refund
+processing/remove waitlist entry), the admin page now auto-reloads so staff always
+see the fully refreshed ticket UI state.
 
 When a refund or cancellation increases a sold‑out ticket's remaining count from
 zero to one, the waitlist email sequence is triggered automatically. Premium

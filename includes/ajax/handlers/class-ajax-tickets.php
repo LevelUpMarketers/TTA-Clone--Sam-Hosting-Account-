@@ -155,9 +155,6 @@ class TTA_Ajax_Tickets {
                     );
                 }
             } else {
-                if ( '' === $csv ) {
-                    $wpdb->delete( $waitlist_table, [ 'ticket_id' => $tid ], [ '%d' ] );
-                }
                 $wpdb->update(
                     $waitlist_table,
                     [
