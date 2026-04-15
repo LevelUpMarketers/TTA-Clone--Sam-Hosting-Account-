@@ -1,0 +1,174 @@
+#tta-alert-bar{
+	text-align: center;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:9999;
+	background:#bd0000;
+	color:#fff;
+	padding:10px;
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+}
+#tta-alert-bar .tta-alert-button{
+	background: #fff;
+	color: #333;
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	width: 180px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+#tta-alert-bar a{
+	color: #fff;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.tta-license-toggle{
+	width: 100%;
+    margin-bottom: 5px;
+}
+
+.tta-license-toggle .tta-license-col-lastname{
+	margin-right:0px;
+}
+
+.tta-license-toggle .tta-license-col-firstname{
+	margin-right:5px;
+}
+
+#tta-license-results{
+	margin-top:20px;
+}
+
+.tta-license-section.tta-license-summary ul{
+	margin-left: 0px;
+}
+
+.tta-license-section.tta-license-summary ul li{
+	display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+#tab-licenses .tta-section-intro{
+	font-size: 13px;
+}
+
+.tta-section-intro a{
+	font-weight:bold;
+}
+
+.tta-pages-span{
+	display:block;
+	margin-top: 3px;
+}
+
+.tta-license-pagination{
+	margin-top:20px;
+}
+
+.tta-license-page-prev-button{
+	margin-right:10px;
+}
+
+.tta-license-panel{
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.tta-license-panel p{
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 0;
+}
+
+.tta-license-panel strong{
+	display: block;
+}
+
+.tta-license-employment-btn{
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tta-license-single-add .tta-admin-progress-response-p{
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 10px !important;
+}
+
+.form-table.tta-partner-profile-table td{
+	min-width: 200px;
+}
+
+.tta-license-section.tta-license-summary, .tta-bulk-upload-license-section, .tta-license-single-add, .tta-license-search{
+	background-color: #eee;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+
+.tta-bulk-upload-license-section, .tta-license-single-add, .tta-license-search{
+	margin-top: 20px;
+}
+
+#tta-license-upload-btn{
+	border-bottom-color:rgb(0, 0, 0);
+	border-bottom-style:outset;
+	border-bottom-width:1px;
+	border-image-outset:0;
+	border-image-repeat:stretch;
+	border-image-slice:100%;
+	border-image-source:none;
+	border-image-width:1;
+	border-left-color:rgb(0, 0, 0);
+	border-left-style:outset;
+	border-left-width:1px;
+	border-right-color:rgb(0, 0, 0);
+	border-right-style:outset;
+	border-right-width:1px;
+	border-top-color:rgb(0, 0, 0);
+	border-top-style:outset;
+	border-top-width:1px;
+	display: block;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.tta-license-upload-progress-holder{
+	margin-top:10px;
+}
+
+.tta-license-upload-progress-holder .tta-license-upload-progress-bar-div{
+	display: inline-block;
+	width:80%;
+	vertical-align:middle;
+}
+
+.tta-license-upload-progress-holder .tta-license-upload-spinner-div{
+	display: inline-block;
+	width:10%;
+}
+
+#tta-license-upload-response{
+	background-color: red;
+    border: solid 1px blue;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
